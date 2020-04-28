@@ -1,3 +1,3 @@
 # ProjectBlog
-İngilizceyi geliştirmeyi yönelik blog geliştirilmesi Repository ve unit of work pattern kullanılıyor. Client tarafında angular servis tarafında
+İngilizceyi geliştirmeyi yönelik blog sitesi. Repository ve unit of work pattern kullanıldı. Client tarafında angular servis tarafında
 .net core api kullanıldı.
