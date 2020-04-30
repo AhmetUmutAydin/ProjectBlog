@@ -11,7 +11,7 @@ namespace ProjectBlog.Core.Extensions
             byte[] keyArray;
             byte[] toEncryptArray = UTF8Encoding.UTF8.GetBytes(toEncrypt);
 
-            string key = "sifrele";
+            string key = "*******";
 
             MD5CryptoServiceProvider md = new MD5CryptoServiceProvider();
             keyArray = md.ComputeHash(UTF8Encoding.UTF8.GetBytes(key));
@@ -31,7 +31,7 @@ namespace ProjectBlog.Core.Extensions
             byte[] keyArray;
             cipherString = cipherString.Replace(" ", "+");
             byte[] toEncryptArray = Convert.FromBase64String(cipherString);
-            string key = "sifrele";
+            string key = "*******";
             MD5CryptoServiceProvider md = new MD5CryptoServiceProvider();
 
             keyArray = md.ComputeHash(UTF8Encoding.UTF8.GetBytes(key));
