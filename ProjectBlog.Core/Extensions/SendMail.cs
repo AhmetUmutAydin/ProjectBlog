@@ -11,11 +11,11 @@ namespace ProjectBlog.Core.Extensions
         public static void Send(MailContent mailContent) {
             var mail = new SmtpClient("smtp.gmail.com",587);
             mail.EnableSsl=true;
-            mail.Credentials = new System.Net.NetworkCredential("otuzgundeingilizce@gmail.com", "Myfirstdomain54");
+            mail.Credentials = new System.Net.NetworkCredential("******", "*******");
             var message = new MailMessage();
             message.IsBodyHtml = true;
             message.Priority = MailPriority.High;
-            message.From = new MailAddress("otuzgundeingilizce@gmail.com");
+            message.From = new MailAddress("*******");
             message.To.Add(mailContent.To);
             message.Subject =mailContent.Title;
             message.Body =mailContent.Body;
